@@ -47,7 +47,7 @@ target_link_libraries(m0 PUBLIC xtensor)
 
 # runTests
 # link it with libaries we want to test, GTest, and pthread library
-add_executable(runTests "src/test_module0.cpp")
+add_executable(runTests "tests/test_module0.cpp")
 target_link_libraries(runTests PUBLIC pthread gtest_main m0)
 
 # runMain
