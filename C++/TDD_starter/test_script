@@ -1,0 +1,8 @@
+#test_script
+cmake CMakeLists.txt
+if [[ $? -eq 0 ]]; then
+    make
+fi
+if [[ $? -eq 0 ]]; then
+    ./runTests
+fi

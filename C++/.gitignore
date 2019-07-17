@@ -1,0 +1,8 @@
+
+/**/lib*.a
+/**/CMakeFiles
+/**/Makefile
+/**/*.cmake
+/**/CMakeCache*
+/**/runTests
+/**/a.out
