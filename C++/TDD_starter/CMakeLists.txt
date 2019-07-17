@@ -39,6 +39,7 @@ endif()
 
 find_package(xtensor REQUIRED)
 include_directories(include)
+include_directories(third_party/include)
 
 # m0
 add_library(m0 "src/module0.cpp")
