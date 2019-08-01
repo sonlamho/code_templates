@@ -14,9 +14,9 @@ TEST(SquareRootTest, NegativeNos) {
 }
 
 TEST(absTest, all) {
-    ASSERT_EQ(1.0, absolute_value(-1.0));
-    ASSERT_EQ(0.0, absolute_value(0.0));
-    ASSERT_EQ(27.0, absolute_value(27.0));
+    ASSERT_EQ(1.0, absoluteValue(-1.0));
+    ASSERT_EQ(0.0, absoluteValue(0.0));
+    ASSERT_EQ(27.0, absoluteValue(27.0));
 }
 
 TEST(cubedTest, all) {

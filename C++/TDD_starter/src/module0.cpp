@@ -18,7 +18,7 @@ double squareRoot(const double a) {
   }
 }
 
-double absolute_value(const double a) {
+double absoluteValue(const double a) {
   return std::abs(a);
 }
 
