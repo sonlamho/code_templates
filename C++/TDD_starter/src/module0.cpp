@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include <cstdio>
-#include <math.h>
+#include <cmath>
 
 #include "module0.h"
 #include "xtensor/xmath.hpp"
@@ -19,7 +19,7 @@ double squareRoot(const double a) {
 }
 
 double absolute_value(const double a) {
-  return abs(a);
+  return std::abs(a);
 }
 
 double cubed(const double a) {
