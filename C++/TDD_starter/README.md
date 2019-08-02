@@ -6,11 +6,11 @@ This contains starter code for a C++ project built with CMake and using code fro
 
 Relatively flat directory structure:
 ```
- |- include  (for headers)
+ |- include  (for public headers)
  |
- |- src      (for source code except tests)
+ |- src      (for source code, internal headers)
  |
- |- tests    (for test code)
+ |- tests    (for test code, with internal headers)
  |
  |- third_party
       |
@@ -19,5 +19,6 @@ Relatively flat directory structure:
       |    ...
      ...
  ```
-
- Run `./test_script.sh` to compile and run tests.
+Note:
+* Run `./test_script.sh` to compile and run tests.
+* You can make `.h`, `.hpp` symlinks in `tests` folder pointing to internal headers in `src` folder to make sure they are synced.
