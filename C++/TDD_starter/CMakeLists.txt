@@ -40,13 +40,11 @@ endif()
 
 find_package(xtensor REQUIRED)
 
-# m0
+# module0
 add_library(m0 "src/module0.cpp")
-#target_include_directories(m0 PUBLIC include ${xtensor_INCLUDE_DIRS})
 target_link_libraries(m0 PUBLIC xtensor)
 
-# runMain
-# link it with dependencies
+# main executable
 add_executable(a.out "src/main.cpp")
 target_include_directories(a.out PUBLIC third_party/include)
 target_link_libraries(a.out PUBLIC m0)
