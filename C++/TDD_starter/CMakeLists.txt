@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.2)
 
-project(TDD_template)
+project(TDD_starter)
 
 ###########################################################################
 # Copied from: https://github.com/google/googletest/tree/master/googletest
