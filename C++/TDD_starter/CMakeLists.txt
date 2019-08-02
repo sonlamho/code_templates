@@ -45,13 +45,12 @@ add_library(m0 "src/module0.cpp")
 #target_include_directories(m0 PUBLIC include ${xtensor_INCLUDE_DIRS})
 target_link_libraries(m0 PUBLIC xtensor)
 
-# runTests
-# link it with libaries we want to test, GTest, and pthread library
-add_executable(runTests "tests/test_module0.cpp")
-target_link_libraries(runTests PUBLIC m0 pthread gtest_main)
-
 # runMain
 # link it with dependencies
 add_executable(a.out "src/main.cpp")
 target_include_directories(a.out PUBLIC third_party/include)
 target_link_libraries(a.out PUBLIC m0)
+
+if(BUILD_TESTS)
+  add_subdirectory(tests)
+endif()
