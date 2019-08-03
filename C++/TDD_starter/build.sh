@@ -10,6 +10,3 @@ if [[ $? -eq 0 ]]; then
     # build
     cmake --build .
 fi
-if [[ $? -eq 0 ]]; then
-    ./tests/runTests
-fi
